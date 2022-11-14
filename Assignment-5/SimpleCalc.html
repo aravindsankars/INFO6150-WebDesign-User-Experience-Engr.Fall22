@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <style>
+        input[type=number], 
+        button { 
+            
+            display:inline-block; margin-bottom: 4px; 
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: darkorange;
+        }
+
+        input {
+            margin-left: 43%;
+            margin-top: 70px;
+        }
+
+        #num1 {
+            height: 30px;
+            width: 230px;
+        }
+
+        #num2 {
+            height: 30px;
+            width: 230px;
+        }
+
+        #result {
+            height: 30px;
+            width: 230px;
+        }
+
+        button {
+            margin-top: 70px;
+            height: 30px;
+            background-color: darkorange;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .bttn {
+            margin-left: 43%;
+        }
+
+        h5 {
+            margin-left: 43%;
+        }
+        
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+
+        <script src="/SC2.js"></script>
+
+    </head>
+    <body>
+
+        <br>
+        <div id="content">Welcome , </div>
+
+        <br>
+    <h1 class="text-center text-success">
+        Calculator
+    </h1>
+
+        <input type="text" id="num1">
+        <h5 id="num1valid" style="color: red;">
+            *Enter number!!*
+        </h5>
+        <input type="text" id="num2">
+        <h5 id="num2valid" style="color: red;">
+            *Enter number!!*
+        </h5>
+        <br><br>
+        <div class="bttn">
+        <button type="button" id="add">Add</button>
+        <button type="button" id="subtract">Subtract</button>
+        <button type="button" id="mul">Multiply</button>
+        <button type="button" id="div">Divide</button><br>
+        </div>
+        <input type="number" id="result" disabled>
+        
+      
+    </body>
+</html>

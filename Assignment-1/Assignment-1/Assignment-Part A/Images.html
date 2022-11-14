@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>
+            Image Gallery
+        </title>
+
+        <link rel="icon" type="image/x-icon" href="/Assignment-Part A/favicon-32x32.png">
+
+
+        <style>
+
+*html {
+            margin: 0;
+            padding: 0;
+        }
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, white, darkseagreen);
+    
+}
+
+header {
+        text-align: center;
+        /*color: crimson;
+        text-decoration: underline;
+        text-decoration-color: blue;
+        margin-bottom: 5%;
+        font-style: oblique;
+        font-size: larger; */
+        background-color: darkolivegreen;
+        color: gold;	  
+	    background-position: right;
+	    background-repeat: no-repeat;
+	    text-align: center;
+	    height: 60px;
+	    padding-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: wavy;
+            }
+
+            #Container {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+
+            .Gallery {
+                float: left;
+                width: 150px;
+                padding: 20px;
+                margin: 20px;
+                border: 1px solid red;
+            }
+
+            .Gallery img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .Gallery:hover {
+                cursor: grabbing;
+                border-radius: 25px;
+                box-shadow: 10px -10px grey;
+                border: 1px solid green;
+            }
+
+            .Gallery .Description {
+                padding: 10px;
+                text-align: center;
+            }
+
+            a:hover {
+                color :chocolate
+            }
+
+            a:visited {
+                color:darkcyan;
+            }
+
+            .Home {
+                margin-right: 5%;
+                margin-top: 1%;
+                }
+
+            .Home .Description {
+                padding: 10px;
+                }
+
+            .form {
+                margin-top: 30%;
+            }
+
+            input[type=text] {
+                width: 10%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid red;
+                border-radius: 4px;
+                }
+
+            input[type=submit] {
+                background-color: darkgreen;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                cursor: grab;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: cadetblue;
+                color: black;
+                text-align: center;
+                height: 2.5%;
+                font-size: larger;
+            } 
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                FC Barcelona Images
+            </h1>
+        </header>
+
+<div id="Container">
+<div class = "Gallery"> 
+    <a href = "/Assignment-Part A/barcelona.png" target = "_blank">
+        <img src="/Assignment-Part A/barcelona.png" alt="">
+        <div class = "Description">Ball</div>
+    </a> 
+</div>
+<div class = "Gallery">
+    <a href = "/Assignment-Part A/Camp_Nou_aerial.jpg" target = "_blank">
+        <img src= "/Assignment-Part A/Camp_Nou_aerial.jpg" alt="">
+        <div class = "Description">Stadium</div>
+    </a>
+ </div>
+<div class = "Gallery">
+    <a href = "/Assignment-Part A/Barcelona-Logo.png" target = "_blank">
+        <img src="/Assignment-Part A/Barcelona-Logo.png" alt="">
+        <div class = "Description">Crest</div>
+    </a> 
+</div>            
+<div class = "Gallery">
+    <a href = "/Assignment-Part A/Jersey.png" target = "_blank">
+        <img src="/Assignment-Part A/Jersey.png" alt="">
+        <div class = "Description">Jersey</div>
+    </a>
+</div>
+</div>
+
+<div class="form">
+    <form>
+        <label for="fname">Which Picture do you like?</label>
+        <input type="text" id="pic" name="pic">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div class = "Home">
+    <a href = "/Assignment-Part A/PartA.html">
+    <div class = "Description">Home</div>
+    </a>
+</div>
+
+    </body>
+    <div class="footer">
+        <a href = "mailto: ssankararavind@gmail.com" target = "_blank">Contact</a>
+      </div>
+
+</html>

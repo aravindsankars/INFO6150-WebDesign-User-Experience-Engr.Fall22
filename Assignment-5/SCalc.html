@@ -1,0 +1,108 @@
+
+<html lang="en">
+
+<head>
+    <title>Simple Calculator</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: darkorange;
+            text-decoration: underline;
+            text-decoration-color: black
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        .form-group {
+
+            margin-top: 50px;
+            margin-left: 40%;
+
+        }
+
+        #submitbtn {
+
+            margin-top: 100px;
+            margin-left: 45%;
+            background-color: darkorange;
+            color: black;
+            width: 100px;
+            height: 50px;
+            font-weight: bolder;
+        }
+        
+
+    </style>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+</script>
+<script src="SC.js"></script>
+
+</head>
+
+<body>
+
+    <br>
+    <h1 class="text-center text-success">
+        Calculator Login
+    </h1>
+
+    <div class="container">
+        <form>
+
+            <br><br>
+            <div class="form-group">
+                <label for="user">
+                    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+                <input type="email" name="email" id="email" required class="form-control"
+                    placeholder="yourname@northeastern.edu"><br>
+                <h5 id="emailvalid" style="color: red;">
+                    Your email must be a valid email
+                </h5>
+            </div>
+            <br><br>
+
+
+            <div class="form-group">
+                <label for="usernames">
+                    Username:
+                </label>
+                <input type="text" name="username" id="usernames" class="form-control" placeholder="User Name">
+                <h5 id="usercheck" style="color: red;">
+                    **Username is missing
+                </h5>
+            </div>
+            <br><br>
+
+
+            <div class="form-group">
+                <label for="password">
+                    Password:
+                </label>
+                <input type="password" name="pass" id="password" class="form-control" placeholder="Password">
+                <h5 id="passcheck" style="color: red;">
+                    **Please Fill the password
+                </h5>
+            </div>
+            <br><br>
+<a>
+            <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+</a>
+        </form>
+    </div>
+    </div>
+
+    
+</body>

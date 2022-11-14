@@ -1,0 +1,283 @@
+*html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Images/portbg.jpg);
+    background-size:contain;
+    background-position: center;
+}
+
+header {
+    padding: auto;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.Main {
+    /*width: 100%;
+    height: 100vh;*/
+    width: 80%;
+    margin: auto;
+    opacity: 0.8;
+    background-color: rgb(114, 97, 74);
+}
+
+nav {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-right: 150px;*/
+    float: left;
+    width: 150px;
+    padding: 0px;
+    position: fixed;
+}
+
+.logo {
+    color: rgb(113, 129, 129);
+    font-size: 50px;
+    letter-spacing: 2px;
+    cursor: grab;
+    text-decoration: underline;
+    text-decoration-color: rgb(114, 97, 74);
+}
+
+span {
+    color: rgb(135, 108, 74);
+    font-weight: bolder;
+}
+
+nav ul {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: rgb(160, 183, 183);
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 183, 183);
+    font-size: 20px;
+    font-weight: 50px;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: tomato;
+}
+
+.home {
+    /*color: antiquewhite;
+    top: 30%;
+    left: 30%;
+    position: absolute;*/
+    overflow: auto;
+    margin-left: 150px;
+    padding: 50px;
+    width: 79.22%;
+    background-color: black;
+    margin-bottom: 150px;
+}
+
+.home h3 {
+    color: antiquewhite;
+}
+
+.home h2 {
+    color: antiquewhite;
+}
+
+.home img {
+    height: 250px;
+    width: 250px;
+    border-radius: 0 50% 50% 50%;
+    float: left;
+    margin: 10px;
+    margin-left: 55%;
+}
+
+footer {
+    color: rgb(114, 97, 74);
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+footer p {
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(114, 97, 74);
+}
+
+footer span {
+    color: black;
+}
+
+.skills {
+    overflow: auto;
+    margin-left: 150px;
+    padding: 50px;
+    width: 79.22%;
+    background-color: black;
+    opacity: 0.8;
+    margin-bottom: 150px;
+}
+
+.skills h1 {
+    color: rgb(160, 183, 183);
+    font-family: cursive;
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 183, 183);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+label {
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+meter {
+    width: 60%;
+    margin: 10px;
+}
+
+.certificates {
+    overflow: auto;
+    margin-left: 150px;
+    padding: 50px;
+    width: 79.22%;
+    background-color: black;
+    opacity: 0.8;
+    margin-bottom: 150px;
+}
+
+.certificates h1 {
+    color: rgb(160, 183, 183);
+    font-family: cursive;
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 183, 183);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact {
+    overflow: auto;
+    margin-left: 150px;
+    padding: 50px;
+    width: 79.22%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.contact h1 {
+    color: rgb(160, 183, 183);
+    font-family: cursive;
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 183, 183);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.symbols {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    padding: auto;
+    margin: auto;
+    clear: none;
+    margin-bottom: 100px;
+}
+
+.symbols img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.symbols a {
+    color: rgb(160, 183, 183);
+    text-decoration: none;
+
+    text-align: center;
+}
+
+.symbols a:hover {
+    color: tomato;
+
+}
+
+.mail img {
+    margin-left: -3px;
+}
+
+.contact h3 {
+    color: rgb(160, 183, 183);
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 183, 183);
+    margin-bottom: 50px;
+}
+
+iframe {
+    width: 600px;
+    height: 300px;
+    border: 0;
+    margin: auto;
+    padding: auto;
+}
+
+.Gallery {
+    float: left;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid rgb(160, 183, 183);
+    margin-bottom: 150px;
+    margin-top: 90px;
+}
+
+.Gallery img {
+    width: 150px;
+    height: 200px;
+}
+
+.Gallery:hover {
+    cursor: grabbing;
+    border-radius: 25px;
+    box-shadow: 10px -10px grey;
+    border: 1px solid rgb(197, 162, 117);
+}
+
+.Gallery .Description {
+    padding: 10px;
+    text-align: center;
+    color: rgb(160, 183, 183);
+    text-decoration: underline;
+    text-decoration-color: rgb(160, 183, 183);
+    font-size: 20px;
+    font-weight: 50px;
+    text-transform: capitalize;
+}
