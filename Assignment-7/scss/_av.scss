@@ -1,0 +1,28 @@
+audio {
+    align-items: center;
+    //margin-left: 25%;
+}
+
+//h3 {
+//    margin-left: 40%;
+//}
+
+video {
+    align-items: center;
+    //margin-left: 37%;
+}
+
+.av {
+    margin-left: 10%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.avf {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 20em;
+}

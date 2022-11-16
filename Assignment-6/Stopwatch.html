@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stopwatch</title>
+
+
+        <style>
+
+            body {
+                background-color: grey;
+            }
+            
+            h1 {
+            text-align: center;
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: darkorange;
+        }
+
+        button {
+            margin-top: 70px;
+            height: 30px;
+            background-color: darkorange;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .bttn {
+            margin-left: 45.5%;
+            margin-top: 16%;
+        }
+
+        #demo {
+            margin-left: 46%;
+            margin-top: 13%;
+            font-size: xx-large;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <br>
+    <h1 class="text-center text-success">
+        Stopwatch
+    </h1>
+
+        <div id="demo">00 : 00 : 00</div>
+        <div class="bttn">
+        <button id = 'stop'> stop</button>
+        <button id = 'start'> start </button>
+        <button id = 'reset'> reset</button>
+        </div>
+
+        <script>
+
+var myInterval = 0;
+let ms = 0;
+let ss = 0;
+let mm = 0;
+let hh = 0;
+let dem = document.querySelector('#demo');
+function myTimer() {
+    ms++;
+
+if(ms == 60){
+    ms = 0;
+    ss++;
+    if(ss == 60){
+        ss = 0;
+        mm++;
+        if(mm == 60){
+        mm = 0;
+        hh++;        
+    }
+    }
+
+    let hrs = hh < 10 ? "0" + hh : hh;
+    let min = mm < 10 ? "0" + mm : mm;
+    let sec = ss < 10 ? "0" + ss : ss;
+    dem.innerHTML = ` ${hrs} : ${min} : ${sec}`;
+}
+}
+
+//stop function
+
+document.getElementById('stop').addEventListener('click', () => {
+    clearInterval(myInterval);
+});
+
+//start function
+
+document.getElementById('start').addEventListener('click', () => {
+    if(myInterval !== null) {
+        clearInterval(myInterval);
+    }
+    myInterval = setInterval(myTimer, 16);
+});
+
+//reset
+
+document.getElementById('reset').addEventListener('click', () => {
+    clearInterval(myInterval);
+    ss = 0;
+    mm = 0;
+    hh = 0;
+    dem.innerHTML = ' 00 : 00 : 00';
+});
+
+        </script>
+    </body>
+</html>

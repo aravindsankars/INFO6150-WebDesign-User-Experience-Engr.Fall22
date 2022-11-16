@@ -1,0 +1,126 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container > div {
+    padding: 1em;
+}
+
+//Placeholder Selectors
+%wmj {
+    width: 90%;
+    margin-left: 75px;
+}
+
+.showcase {
+    @include set-background($primary-color);
+    height: 88px; 
+    @extend %wmj;
+    //width: 90%;
+    //margin-left: 75px;
+    justify-content: center;
+    position: fixed;
+//Nesting
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content:  space-between;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+    
+        li {
+            padding: 15px;
+        }
+    
+        a {
+            color: set-text-color($primary-color);
+        }
+    
+        a:hover {
+            color: $secondary-color;
+        }
+    } 
+}
+
+.box2 {
+    background-image:url('/Images/weeknd-gif.gif'); 
+        background-repeat:repeat;
+        background-size: cover;
+        opacity: 0.9;
+        border: 1px solid black;
+        padding: 15%;
+        height: 600px;
+        @extend %wmj;
+        //width: 90%;
+        //margin-left: 75px;
+        justify-content: center;
+    border-radius: 50%;
+}
+
+h1 {
+    color: darkslategray;
+    text-align: center;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+}
+
+h2 {
+    color: darkslategray;
+    text-align: center;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: darkslategray;
+}
+
+.box1 p {
+color: darkslategray;
+text-align: center;
+font-size: 20px;
+}
+
+.box2 p {
+    margin: 3%;
+    font-weight: bold;
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 250px;
+    }
+
+.box1 img {
+    width: 600px;
+    height: 600px;
+    margin-left: 400px;
+    border-radius: 0 50% 0 50%;
+}
+
+.box1 {
+    //margin-left: 75px;
+    justify-content: center;
+    //width: 90%;
+    @extend %wmj;
+    align-items: center;
+}
+
+.division {
+    @extend %wmj;
+    //width: 90%;
+    //margin-left: 75px;
+    justify-content: center;
+}
+
+
+
+@import '_songs';
+@import '_av';
+
